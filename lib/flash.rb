@@ -10,7 +10,9 @@ class Flash
   end
 
   def [](key)
+    debugger
     @now[key.to_s] || @flash_cookie[key.to_s]
+    debugger
   end
 
   def []=(key, value)
